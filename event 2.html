@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <!--Refer to stylesheets-->
+  <link rel="stylesheet" href="events style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <a href="#" class="logo"><span>Book</span>Event</a>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="index.html #popular">popular</a>
+      <a href="index.html #business">business</a>
+      <a href="index.html #sports">sports</a>
+      <a href="index.html #trips">trips</a>
+      <a href="index.html #contact">contact</a>
+    </nav>
+    <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+  <!--Event Details Section-->
+  <section class="event-details">
+    <div class="container">
+      <div class="event-info">
+        <h2>Trip to Skardu by Air</h2>
+        <div class="details">
+          <div class="date">
+            <i class="fas fa-calendar-alt"></i><span> May 05, 2025</span>
+          </div>
+          <div class="time">
+            <i class="fas fa-clock"></i><span> 08:00 AM</span>
+          </div>
+          <p>Host: Tickets4u.pk</p>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i><span> Sarfaranga Cold Desert Skardu, Abbottabad, Pakistan</span>
+          </div>
+        </div>
+                
+        <button><a href="#book" style="color: white;">Book Now</a></button>
+
+        <p class="description">
+            Fly from Karachi, Lahore, or Islamabad directly to Skardu<br>Trip Cost Rs.30,500/- per person
+            <br>Duration: 6 Days & 5 Nights
+            <br><br>Plan your trip according to your Dates.
+            <br>Call or WhatsApp: 0324-1454750
+        </p>
+        
+        <h3><span>About the Event</span></h3>
+        <p class="description">
+            Tourist attractions: <br>
+            ✓ Skardu <br>
+            ✓ Deosai  <br>
+            ✓ Khaplu <br>
+            ✓ Sheosar Lakeu <br>
+            ✓ Manthoka waterfall <br>
+            ✓ Shangrila <br>
+            ✓ Cold Desert <br>
+            <br>
+            Includes: <br>
+            ✓ Hotels <br>
+            ✓ Breakfast <br>
+            ✓ Dinner <br>
+            ✓ Tz Prado Car <br>
+            ✓ All Fuel, Toll taxes & Parking Charges <br>
+            ✓ Tour guide service <br>
+        </p>
+        <div class="additional-info">
+          <h3>Note:</h3>
+          <p class="description">Air ticket is not included in the package, it will cost you according to the Fare at the time of departure.</p>
+       </div>
+        <div class="event-image">
+          <img src="images/trip 1.png" alt="Event Poster">
+        </div>
+        </div>
+  </section>
+    
+  <!--Booking Form-->
+  <section class="book" id="book">
+    <h3>BUY YOUR TICKETS: </h3>
+    <form id="bookForm">
+      <div class="inputBox">
+        <input type="text" placeholder="name" required />
+        <input type="email" placeholder="email" required />
+      </div>
+      <div class="inputBox">
+        <input type="tel" placeholder="Contact Number" required />
+        <input type="number" placeholder="Number of Tickets" required />
+      </div>
+      <div class="inputBox">
+      <select name="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+        <option value="vouchers">I have vouchers</option>
+      </select>
+      <br>
+      </div>
+      <input type="submit" value="Confirm Tickets" class="btn" />
+    </form>
+    <div id="responseMessage" style="display: none; margin-top: 20px; color: white; font-size: 1.5rem;">
+      Your Tickets have been confirmed for the event!
+    </div>
+  </section>
+  <section class="footer">
+  <div class="credit">
+    &copy 2024 <span>Event Booking System</span>
+  </div>
+  </section>
+
+  <!--Refer to JavaScript file-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+    
+  <script>
+    document.getElementById('bookForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('responseMessage').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

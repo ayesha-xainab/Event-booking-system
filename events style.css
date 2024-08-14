@@ -1,0 +1,168 @@
+/* event details page style */
+
+.event-details {
+  padding-top: 8rem;
+}
+
+.event-details .container {
+  max-width: 100%;
+  max-height: max-content;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  background-color: #333;
+  border: 1px solid #888787;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-info {
+  padding: 2rem;
+}
+
+.event-info h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-info .details {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #1abc9c;
+}
+
+button{
+  background-color: #1abc9c;
+  padding: 0.5rem;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-info .description {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.event-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-info h3 span {
+  color: #1abc9c;
+}
+
+.event-image {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.event-image img {
+  width: 50%;
+  height: 35%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.additional-info {
+  padding: 1rem;
+  border: 1px solid #969696;
+  margin-top: 2rem;
+}
+
+.additional-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Booking Form Style */
+.book form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.book h3{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.book form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book form .inputBox input, select{
+  width: 100%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.book form .inputBox input::placeholder {
+  color: #eee;
+  text-transform: capitalize;
+}
+
+.book form .inputBox input:focus{
+  background: #444;
+}
+
+.book form .inputBox input {
+  width: 49%;
+}
+
+.inputBox select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.book form .btn{
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+  }
+
+  #menu-bars {
+    display: block;
+  }
+
+  .event-details .container {
+    padding: 1rem;
+  }
+
+  .event-info {
+    padding: 1rem;
+  }
+
+  .event-image img {
+    height: 1005;
+  }
+}

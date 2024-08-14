@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <!--Refer to stylesheets-->
+  <link rel="stylesheet" href="events style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <a href="#" class="logo"><span>Book</span>Event</a>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="index.html #popular">popular</a>
+      <a href="index.html #business">business</a>
+      <a href="index.html #sports">sports</a>
+      <a href="index.html #trips">trips</a>
+      <a href="index.html #contact">contact</a>
+    </nav>
+    <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+  <!--Event Details Section-->
+  <section class="event-details">
+    <div class="container">
+      <div class="event-info">
+        <h2>Galiyat Epic Downhill (MTBI-410)</h2>
+        <div class="details">
+          <div class="date">
+            <i class="fas fa-calendar-alt"></i><span> August 17, 2024</span>
+          </div>
+          <div class="time">
+            <i class="fas fa-clock"></i><span> 05:00 AM - 06:00 PM</span>
+          </div>
+          <p>Host: MTB Islamabad</p>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i><span> F9 Park, Islamabad, Pakistan</span>
+          </div>
+        </div>
+                
+        <button><a href="#book" style="color: white;">Book Now</a></button>
+
+        <p class="description">
+            Get ready for the mega ride with a thrilling downhill on one of the most beautiful roads in the Himalayas.
+            <br>There are multiple routes consisting of both offroad and road downhills. We will decide according to the situation.
+            <br>Please confirm your participation for an awesome day in the mountains.
+            
+        </p>
+        
+        <h3><span>Ride Plan:</span></h3>
+        <p class="description">
+            RV: F-9 Park Khyber Gate <br>
+            Time: 0500 Hrs <br>
+            Departure: 0520 Hrs <br>
+            Ride Start: 0900 Hrs (Approx) <br>
+            Ride Ends: 1600 Hrs (Approx) <br>
+            <br>
+            Type: MTB Road/Off-Road Hilly Ride <br>
+            Difficulty: Hard <br>
+        </p>
+        <div class="additional-info">
+          <h3>Guidelines to follow:</h3>
+          <p class="description">
+            • Helmets are a Must <br>
+            • Be punctual for the rides <br>
+            • Ensure that your bicycles are in roadworthy condition and that your tires have air before you come to the ride. <br>
+            • Stay to the left side of the road when riding <br>
+            • Ride in two parallel lines at most and maintain discipline for safety purposes <br>
+            • Respect the countryside and leave it tidy</p>
+        </div>
+       </div>
+        <div class="event-image">
+          <img src="images/trip 2.png" alt="Event Poster">
+        </div>
+        </div>
+  </section>
+    
+  <!--Booking Form-->
+  <section class="book" id="book">
+    <h3>BUY YOUR TICKETS: </h3>
+    <form id="bookForm">
+      <div class="inputBox">
+        <input type="text" placeholder="name" required />
+        <input type="email" placeholder="email" required />
+      </div>
+      <div class="inputBox">
+        <input type="tel" placeholder="Contact Number" required />
+        <input type="number" placeholder="Number of Tickets" required />
+      </div>
+      <div class="inputBox">
+      <select name="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+        <option value="vouchers">I have vouchers</option>
+      </select>
+      <br>
+      </div>
+      <input type="submit" value="Confirm Tickets" class="btn" />
+    </form>
+    <div id="responseMessage" style="display: none; margin-top: 20px; color: white; font-size: 1.5rem;">
+      Your Tickets have been confirmed for the event!
+    </div>
+  </section>
+  <section class="footer">
+  <div class="credit">
+    &copy 2024 <span>Event Booking System</span>
+  </div>
+  </section>
+
+  <!--Refer to JavaScript file-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+    
+  <script>
+    document.getElementById('bookForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('responseMessage').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

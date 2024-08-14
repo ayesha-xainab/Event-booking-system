@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <!--Refer to stylesheets-->
+  <link rel="stylesheet" href="events style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <a href="#" class="logo"><span>Book</span>Event</a>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="index.html #popular">popular</a>
+      <a href="index.html #business">business</a>
+      <a href="index.html #sports">sports</a>
+      <a href="index.html #trips">trips</a>
+      <a href="index.html #contact">contact</a>
+    </nav>
+    <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+  <!--Event Details Section-->
+  <section class="event-details">
+    <div class="container">
+      <div class="event-info">
+        <h2>Run to Celebrate: Jashn e Azadi Fun Run & Walk</h2>
+        <div class="details">
+          <div class="date">
+            <i class="fas fa-calendar-alt"></i><span> August 14, 2024</span>
+          </div>
+          <div class="time">
+            <i class="fas fa-clock"></i><span> 05:40 PM - 07:30 PM</span>
+          </div>
+          <p>Host: Run with Us</p>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i><span> Rose and Jasmine Garden, Islamabad</span>
+          </div>
+        </div>
+                
+        <button><a href="#book" style="color: white;">Book Now</a></button>
+
+        <p class="description">
+          On Wednesday, August 14th, marks 77 beautiful years of the independence of Pakistan; 77 matchless years of Freedom; 
+          77 years of making history; 77 years as a sovereign nation; 77 years & counting.
+          Like every past year, Islamabad Run With Us (IRU), staying true to its values of bringing the entire active community 
+          together, presents to you the JASHAN-E-AZADI Fun RUN to kick-start Independence Day with much needed Vigour & Vitality.
+          <br>We will be doing an easy-paced 5 KM run through Shakarparian (walk pacers are welcome to join us since it’s a short distance run).
+        </p>
+        
+        <h3><span>The Plan:</span></h3>
+        <p class="description">
+          We will gather in the parking space for ROSE & JASMINE GARDEN at 5:40 AM; We will then make our way towards 
+          Chand Tara where we will be joined by the members from Islamabad’s cycling groups to sing a National Anthem together at 6:00 Am.
+          <br>After the National Anthem, we will start with our run at 6:10 AM towards Shakarparian View point 
+          on one of the most scenic roads in The Capital: Shakarparian Road.
+          The road is adjacent to the Shakarparian Jungle on the one side and the famous Shakarparian hill on the other side. 
+          We will make our way up to the Pakistan Monument; and after exploring the beautiful hill; the return will be through the Shakarparian Jungle Trail.
+        </p>
+        <div class="additional-info">
+          <p class="description">All running participants are encouraged to join in the fun of face-painting, expressing their support for the vibrant colors of the Pakistani flag.</p>
+        </div>
+       </div>
+        <div class="event-image">
+          <img src="images/sports 2.png" alt="Event Poster">
+        </div>
+        </div>
+  </section>
+    
+  <!--Booking Form-->
+  <section class="book" id="book">
+    <h3>BUY YOUR TICKETS: </h3>
+    <form id="bookForm">
+      <div class="inputBox">
+        <input type="text" placeholder="name" required />
+        <input type="email" placeholder="email" required />
+      </div>
+      <div class="inputBox">
+        <input type="tel" placeholder="Contact Number" required />
+        <input type="number" placeholder="Number of Tickets" required />
+      </div>
+      <div class="inputBox">
+      <select name="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+        <option value="vouchers">I have vouchers</option>
+      </select>
+      <br>
+      </div>
+      <input type="submit" value="Confirm Tickets" class="btn" />
+    </form>
+    <div id="responseMessage" style="display: none; margin-top: 20px; color: white; font-size: 1.5rem;">
+      Your Tickets have been confirmed for the event!
+    </div>
+  </section>
+  <section class="footer">
+  <div class="credit">
+    &copy 2024 <span>Event Booking System</span>
+  </div>
+  </section>
+
+  <!--Refer to JavaScript file-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+    
+  <script>
+    document.getElementById('bookForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('responseMessage').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
